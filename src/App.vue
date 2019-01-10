@@ -2,8 +2,8 @@
   <div id="app">
     <h1>Zone Movie Listings</h1>
     <ul id="movie-list" class="movie-list">
-      <li v-for="movie in movies">
-        <MovieListItem :movie-data="movie" :poster-base-url="tmdbPosterBaseUrl"></MovieListItem>
+      <li v-for="(movie, index) in movies" :key="index">
+        <MovieListItem :movie-data="movie" :genre-ids="genres" :poster-base-url="tmdbPosterBaseUrl"></MovieListItem>
       </li>
     </ul>
   </div>
@@ -12,7 +12,6 @@
 <script>
 import MovieListItem from "./components/MovieListItem.vue";
 import axios from 'axios';
-import _ from 'lodash';
 
 export default {
   name: "app",
@@ -81,13 +80,52 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding: 2rem 1rem;
+}
+.movie-list {
+  list-style: none;
+  padding: 1rem;
+  display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding: 0;
+  margin-top: 1rem;
+}
+@media (min-width: 480px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 690px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 930px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1160px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1380px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1610px) {
+  .movie-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 </style>
