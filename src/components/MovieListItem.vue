@@ -63,16 +63,19 @@ export default {
   display: inline-block;
 }
 .vote-average {
+  align-items: center;
   background-color: hsla(0, 0%, 33%, 0.9);
   border-radius: 50% !important;
   color: #fff;
+  display: flex;
   font-size: 0.8rem;
   font-weight: bold;
   height: 2rem;
+  justify-content: center;
   left: 1.5rem;
   line-height: 1.2rem;
   margin-bottom: 0;
-  padding: 0.5rem;
+  padding: 0;
   position: absolute;
   top: 1.5rem;
   width: 2rem;
