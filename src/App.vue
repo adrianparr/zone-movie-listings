@@ -2,7 +2,7 @@
   <div id="app">
     <v-app dark>
       <h1 class="display-3 font-weight-light main-heading">Zone Movie Listings</h1>
-      <p class="credit"><a href="mailto:adrianparr@gmail.com">by Adrian Parr</a></p>
+      <p class="credit"><a href="mailto:adrianparr@gmail.com">by Adrian Parr</a> on Friday 11th January 2019</p>
       <v-expansion-panel>
         <v-expansion-panel-content>
           <div slot="header">Filters</div>
