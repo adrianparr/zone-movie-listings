@@ -1,5 +1,8 @@
 # zone-movie-listings
 
+## Original brief
+[The original brief can be viewed here](https://github.com/zone/frontend/blob/master/challenges/movie-listings.md)
+
 ## Project setup
 ```
 npm install
