@@ -184,7 +184,7 @@ export default {
 }
 .checkbox-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 1rem;
 }
 .filter-heading {
@@ -201,73 +201,73 @@ export default {
 .movie-list {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   list-style: none;
   margin-top: 1rem;
   padding: 0;
 }
 @media (min-width: 480px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 690px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 930px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: repeat(4, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media (min-width: 1160px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 @media (min-width: 1380px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
   }
 }
 @media (min-width: 1610px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 @media (min-width: 1900px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(9, 1fr);
   }
 }
 @media (min-width: 2200px) {
   .movie-list {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(9, 1fr);
   }
   .checkbox-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
   }
 }
 </style>
